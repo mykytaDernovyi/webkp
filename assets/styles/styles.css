@@ -1031,6 +1031,18 @@ input {
         display: none;
     }
 
+    .hero-tag {
+        font-size: 5.688rem;
+    }
+
+    .hero-tag span {
+        font-size: 11.688rem;
+    }
+
+    .hero-title {
+        font-size: 1.25rem;
+    }
+    
     .header-nav {
         position: static;
         height: auto;
@@ -1258,3 +1270,4 @@ input {
     }
 
 }
+
