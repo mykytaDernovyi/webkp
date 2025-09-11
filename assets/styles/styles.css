@@ -1,4 +1,28 @@
-@import url(./_variables.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/digital-numbers');
+@font-face {
+    font-family: "Digital Numbers";
+    src: url(./DigitalNumbers-Regular.woff) format("woff");
+}
+:root {
+    --main-color: #000000;
+    --title-color: #484848;
+    --hero-title-color: #555555;
+    --hero-tag-span-color: #FFFFFF;
+    --main-background: #FFFFFF;
+    --main-page-image-background: #E0E0E0;
+    --btn-font-color: #FFFFFF;
+    --btn-color: #000000;
+    --btn-hover-color: #808080;
+    --regular-text-color: #8A8A8A;
+    --progres-bg: #B6B6B6;
+    --secondary-background: #FAFAFA;
+    --availability-text-color: #FF4646;
+    --promotion-bg: #DADADA;
+    --font-title: "Volkhov", serif;
+    --font-main: "Poppins", sans-serif;
+    --font-digital: "Digital Numbers", sans-serif;
+}
 
 * {
     padding: 0;
@@ -1232,4 +1256,5 @@ input {
         grid-template-columns: repeat(3, 1fr);
         gap: 60px;
     }
+
 }
