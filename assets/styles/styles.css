@@ -1076,7 +1076,7 @@ input {
 
     .header {
         height: auto;
-        padding: 70px 0 90px;
+        padding: 20px 0 90px;
     }
 
     .swiper {
@@ -1270,4 +1270,5 @@ input {
     }
 
 }
+
 
