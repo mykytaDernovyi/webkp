@@ -159,6 +159,7 @@ ul {
 }
 
 .main-login-link {
+    font-weight: bolder;
     color: var(--title-color);
 }
 
@@ -1270,6 +1271,7 @@ input {
     }
 
 }
+
 
 
 
