@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінку не знайдено (404) - FASCO</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <style>
+        .error-page-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .error-page-container h1 {
+            font-family: var(--font-title);
+            font-size: 6rem;
+            color: var(--title-color);
+            margin: 0;
+        }
+        .error-page-container p {
+            font-size: 1.2rem;
+            color: var(--regular-text-color);
+            margin: 10px 0 30px;
+        }
+        .error-page-container .btn-home {
+            display: inline-block;
+            width: auto;
+            padding: 15px 30px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="error-page-container">
+            <h1>ТЕСТОВЕ 404</h1>
+            <p>Ой! Здається, ми не можемо знайти сторінку, яку ви шукаєте.</p>
+            <a href="index.html" class="btn btn-home">Повернутися на головну</a>
+        </div>
+    </main>
+
+    </body>
+</html>

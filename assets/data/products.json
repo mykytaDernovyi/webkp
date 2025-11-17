@@ -1,0 +1,176 @@
+[
+    {
+        "id": 1,
+        "name": "Червоний капелюх",
+        "image": "./assets/images/shop-hat-1.webp",
+        "price": 8.00,
+        "swatches": ["#CC0000", "#000000", "#F5DEB3"],
+        "description": "Класичний червоний капелюх із широкими полями, ідеально підходить для сонячного дня або як яскравий акцент."
+    },
+    {
+        "id": 2,
+        "name": "Льняна сорочка",
+        "image": "./assets/images/shop-shirt-1.webp",
+        "price": 17.00,
+        "swatches": ["#8DB4D2", "#FFD1DC"],
+        "description": "Легка та дихаюча сорочка з суміші льону, незамінна річ у вашому літньому гардеробі."
+    },
+    {
+        "id": 3,
+        "name": "Пальто з довгим рукавом",
+        "image": "./assets/images/shop-coat-1.webp",
+        "price": 106.00,
+        "swatches": ["#EBE6DB", "#C1E1C1"],
+        "description": "Елегантне демісезонне пальто з довгими рукавами для прохолодної погоди та стильних образів."
+    },
+    {
+        "id": 4,
+        "name": "Джинсовий капелюх",
+        "image": "./assets/images/shop-hat-2.webp",
+        "price": 20.00,
+        "oldPrice": 25.00,
+        "swatches": ["#B1C5D4", "#063E66"],
+        "description": "Стильний джинсовий капелюх-панама у вінтажному стилі. Чудово доповнить ваш повсякденний образ."
+    },
+    {
+        "id": 5,
+        "name": "Льняний топ",
+        "image": "./assets/images/shop-top-1.webp",
+        "price": 25.00,
+        "swatches": ["#C1E1C1", "#ffffff"],
+        "description": "Базовий та зручний лляний топ на кожен день. Must-have для спекотного літа."
+    },
+    {
+        "id": 6,
+        "name": "Оверсайз футболка",
+        "image": "./assets/images/shop-tshirt-1.webp",
+        "price": 11.00,
+        "oldPrice": 14.00,
+        "swatches": ["#FFD1DC", "#C6AEC7", "#ffffff"],
+        "description": "Червона оверсайз футболка з яскравим та зухвалим принтом. Створена для самовираження."
+    },
+    {
+        "id": 7,
+        "name": "Поляризовані окуляри",
+        "image": "./assets/images/shop-glasses-1.webp",
+        "price": 18.00,
+        "oldPrice": 21.00,
+        "swatches": ["#000000"],
+        "description": "Сонцезахисні окуляри з поляризацією для надійного захисту ваших очей від сонця."
+    },
+    {
+        "id": 8,
+        "name": "Куртка 'Rockstar'",
+        "image": "./assets/images/shop-jacket-1.webp",
+        "price": 22.00,
+        "swatches": ["#C6AEC7", "#BEDCE3"],
+        "description": "Блискуча та ефектна куртка в стилі \"Рокзірка\" для найяскравіших вечірок та подій."
+    },
+    {
+        "id": 9,
+        "name": "Чорна сукня в горошок",
+        "image": "./assets/images/shop-dress-1.webp",
+        "price": 20.00,
+        "swatches": ["#063E66", "#000000"],
+        "description": "Романтична чорна сукня в дрібний горошок з довгими прозорими рукавами."
+    },
+    {
+        "id": 10,
+        "name": "Елегантне бежеве пальто",
+        "image": "./assets/images/shop-coat-2.webp",
+        "price": 100.00,
+        "oldPrice": 120.00,
+        "swatches": ["#EBE6DB", "#708090"],
+        "description": "Класичне бежеве пальто, яке ніколи не вийде з моди. Ідеальна інвестиція у ваш гардероб."
+    },
+    {
+        "id": 11,
+        "name": "Весняний рожевий піджак",
+        "image": "./assets/images/shop-coat-3.webp",
+        "price": 135.50,
+        "swatches": ["#FFC0CB", "#36454F"],
+        "description": "Легкий весняний піджак ніжно-рожевого кольору з квітами."
+    },
+    {
+        "id": 12,
+        "name": "Бежева сукня-футболка",
+        "image": "./assets/images/shop-dress-2.webp",
+        "price": 45.00,
+        "swatches": ["#D2B48C", "#FFFACD"],
+        "description": "Зручна бежева сукня-футболка з поясом. Ідеально для повсякденного образу."
+    },
+    {
+        "id": 13,
+        "name": "Біла вечірня сукня",
+        "image": "./assets/images/shop-dress-3.webp",
+        "price": 65.00,
+        "oldPrice": 75.99,
+        "swatches": ["#FFFFFF", "#E6E6FA"],
+        "description": "Вишукана біла сукня з V-подібним вирізом та легкими рукавами."
+    },
+    {
+        "id": 14,
+        "name": "Різнокольорова куртка",
+        "image": "./assets/images/shop-jacket-2.webp",
+        "price": 89.90,
+        "swatches": ["#FF6C6C", "#6CB9FF", "#FFF06C"],
+        "description": "Яскрава куртка в кольоровий квадрат. Для тих, хто не боїться виділятися з натовпу."
+    },
+    {
+        "id": 15,
+        "name": "Бежевий піджак",
+        "image": "./assets/images/new-1.webp",
+        "price": 32.00,
+        "swatches": ["#F5F5DC", "#D2B48C"],
+        "description": "Стильний бежевий піджак у поєднанні з легким топом. Чудовий вибір для офісу або зустрічі."
+    },
+    {
+        "id": 16,
+        "name": "Біла бавовняна блуза",
+        "image": "./assets/images/new-2.webp",
+        "price": 42.50,
+        "swatches": ["#ffffff"],
+        "description": "Елегантна біла блуза з легкими рукавами-воланами. Виготовлена з натуральної бавовни."
+    },
+    {
+        "id": 17,
+        "name": "В'язаний светр та шапка",
+        "image": "./assets/images/new-3.webp",
+        "price": 22.50,
+        "oldPrice": 29.00,
+        "swatches": ["#8B4513", "#A0522D"],
+        "description": "Теплий в'язаний комплект зі светра та шапки. Затишок та стиль в одному."
+    },
+    {
+        "id": 18,
+        "name": "Вінтажна футболка",
+        "image": "./assets/images/new-4.webp",
+        "price": 24.00,
+        "swatches": ["#FFFFFF", "#000000"],
+        "description": "Біла футболка з поясом та шкіряною курткою. Класичний вінтажний образ."
+    },
+    {
+        "id": 19,
+        "name": "Сукня з квітковим принтом",
+        "image": "./assets/images/new-5.webp",
+        "price": 19.99,
+        "swatches": ["#8B0000", "#2F4F4F", "#191970"],
+        "description": "Яскрава та легка сукня з квітковим принтом для чудового настрою."
+    },
+    {
+        "id": 20,
+        "name": "Біла водолазка",
+        "image": "./assets/images/new-6.webp",
+        "price": 34.00,
+        "swatches": ["#ffffff"],
+        "description": "Базова біла водолазка, яка має бути у кожному гардеробі. М'яка та приємна до тіла."
+    },
+    {
+        "id": 21,
+        "name": "Синій брючний костюм",
+        "image": "./assets/images/insta-2.webp",
+        "price": 115.00,
+        "swatches": ["#5F9EA0"],
+        "description": "Яскравий синій костюм (піджак та брюки) для впевненої в собі жінки."
+    }
+]

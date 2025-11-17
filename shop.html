@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин - FASCO</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="stylesheet" href="./assets/styles/shop.css">
+
+    <link rel="icon" href="./assets/images/shop_icon.webp">
+    <meta name="description" content="Магазин одягу FASCO. Перегляньте наші пропозиції та новинки.">
+</head>
+
+<body>
+    <section class="header-section">
+        <header class="header d-flex">
+            <div class="content-wrap d-flex w-full justify-between items-center">
+                
+                <div class="logo font-title">
+                    <a href="index.html" class="title-color">FASCO</a>
+                </div>
+                
+                <div id="burgerMenu" class="burger-menu">
+                    <i id="openIcon" class="fa-solid fa-bars"></i>
+                    <i id="closeIcon" class="fa-solid fa-xmark d-none"></i>
+                </div>
+                
+                <nav id="headerNav" class="header-nav d-flex">
+                    <ul class="main-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="shop.html" class="active">Магазин</a></li>
+                        <li><a href="shop.html">Товари</a></li>
+                        <li><a href="#">Сторінки <i class="fa-solid fa-chevron-down" style="font-size: 0.8em;"></i></a></li>
+                    </ul>
+                    <ul class="main-menu-registration">
+                        <li><a href="signin.html" class="main-login-link">Увійти</a></li>
+                        <li><a href="signup.html" class="btn btn__header">Зареєструватися</a></li>
+                    </ul>
+                </nav>
+
+                <ul class="main-menu-tools">
+                    <li><a href="#" aria-label="Пошук"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="signin.html" aria-label="Мій акаунт"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#" aria-label="Обране"><i class="fa-regular fa-star"></i></a></li>
+                    <li><a href="#" aria-label="Кошик"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                </ul>
+                
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <section class="shop-page-container">
+            <div class="shop-header">
+                <h1>Мода</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Головна</a> / <span>Мода</span>
+                </div>
+            </div>
+
+            <div class="shop-main-content">
+                <aside class="shop-sidebar">
+                    <h2>Фільтри</h2>
+
+                    <div class="filter-group">
+                        <h3>Розмір</h3>
+                        <div class="size-filters">
+                            <span class="size-box">S</span>
+                            <span class="size-box active">M</span>
+                            <span class="size-box">L</span>
+                            <span class="size-box">XL</span>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Кольори</h3>
+                        <div class="color-filters">
+                            <span class="color-dot" style="background-color: #FF6C6C;"></span>
+                            <span class="color-dot" style="background-color: #FF7629;"></span>
+                            <span class="color-dot" style="background-color: #FFF06C;"></span>
+                            <span class="color-dot" style="background-color: #9BFF6C;"></span>
+                            <span class="color-dot" style="background-color: #6CFF9E;"></span>
+                            <span class="color-dot" style="background-color: #6CFFDC;"></span>
+                            <span class="color-dot" style="background-color: #6CB9FF;"></span>
+                            <span class="color-dot" style="background-color: #6CF6FF;"></span>
+                            <span class="color-dot" style="background-color: #6CA7FF;"></span>
+                            <span class="color-dot" style="background-color: #6C7BFF;"></span>
+                            <span class="color-dot" style="background-color: #8A6CFF;"></span>
+                            <span class="color-dot" style="background-color: #B66CFF;"></span>
+                            <span class="color-dot" style="background-color: #FC6CFF;"></span>
+                            <span class="color-dot" style="background-color: #FF6C6C;"></span>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Ціни</h3>
+                        <ul>
+                            <li><a href="#">$0 - $50</a></li>
+                            <li><a href="#">$50 - $100</a></li>
+                            <li><a href="#">$100 - $150</a></li>
+                            <li><a href="#">$150 - $200</a></li>
+                            <li><a href="#">$300 - $400</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="filter-group collapsible closed">
+                        <div class="filter-group-header">
+                            <h3>Бренди</h3>
+                            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+                        </div>
+                        <div class="filter-list">
+                            <ul>
+                                <li><a href="#">Minimog</a></li>
+                                <li><a href="#">Retrolie</a></li>
+                                <li><a href="#">Brook</a></li>
+                                <li><a href="#">Learts</a></li>
+                                <li><a href="#">Vagabond</a></li>
+                                <li><a href="#">Abby</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filter-group collapsible">
+                        <div class="filter-group-header">
+                            <h3>Колекції</h3>
+                            <i class="fa-solid fa-chevron-down toggle-arrow"></i>
+                        </div>
+                        <div class="filter-list">
+                            <ul>
+                                <li><a href="#">Всі товари</a></li>
+                                <li><a href="#">Бестселери</a></li>
+                                <li><a href="#">Нові надходження</a></li>
+                                <li><a href="#">Аксесуари</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <h3>Теги</h3>
+                        <ul>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">Hats</a></li>
+                            <li><a href="#">Sandal</a></li>
+                            <li><a href="#">Belt</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Snacker</a></li>
+                            <li><a href="#">Denim</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <section class="shop-products">
+                    <div class="shop-controls">
+                        <div class="sort-by">
+                            <select name="sort" id="sort">
+                                <option value="best-selling">Бестселери</option>
+                                <option value="price-asc">Ціна, А до Я</option>
+                                <option value="price-desc">Ціна, Я до А</option>
+                            </select>
+                            <i class="fa-solid fa-chevron-down sort-by-arrow"></i>
+                        </div>
+
+                        <div class="view-options">
+                            <button class="view-btn" data-layout="list" data-items="6" title="Вигляд списком">
+                                <i class="fa-solid fa-list"></i>
+                            </button>
+                            <button class="view-btn active" data-layout="grid-3" data-items="9" title="Сітка 3х3">
+                                <i class="fa-solid fa-grip"></i>
+                            </button>
+                            <button class="view-btn" data-layout="grid-4" data-items="12" title="Сітка 3х4">
+                                <i class="fa-solid fa-table-cells"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="product-grid" id="product-grid">
+                        </div>
+
+                    <nav class="pagination" id="pagination-container">
+                        </nav>
+                </section>
+            </div>
+        </section>
+
+        <section class="promotion">
+             <div class="promotion-wrapper">
+                <img class="bg-promotion" src="./assets/images/promotion.webp" alt="Модель Peaky Blinders">
+                <div class="text-box promotion-text-box">
+                    <p class="regular-text">Жіноча колекція</p>
+                    <h2>Peaky Blinders</h2>
+                    <p class="description">Ексклюзивна колекція</p>
+                    <p class="regular-text">Натхненна легендарним серіалом, ця колекція поєднує в собі елегантність
+                        1920-х років із сучасним стилем. Ідеальний вибір для
+                        впевнених у собі жінок, які цінують якість та унікальність.
+                    </p>
+                    <div class="size-wrapper">
+                        <p class="regular-text">Розмір:</p>
+                        <p class="promotion-size">M</p>
+                    </div>
+                    <p class="promotion-price">$100.<span>00</span></p>
+                    <a class="btn" href="shop.html">Купити зараз</a>
+                </div>
+            </div>
+            <div class="advantages-wrapper">
+                <div class="advantage-card">
+                    <img src="./assets/icons/quality.svg" alt="Іконка якості">
+                    <div class="advantage-text-box">
+                        <h4>Висока якість</h4>
+                        <p>виготовлено з найкращих матеріалів</p>
+                    </div>
+                </div>
+                <div class="advantage-card">
+                    <img src="./assets/icons/warrany.svg" alt="Іконка гарантії">
+                    <div class="advantage-text-box">
+                        <h4>Гарантія</h4>
+                        <p>Понад 2 роки</p>
+                    </div>
+                </div>
+                <div class="advantage-card">
+                    <img src="./assets/icons/shipping.svg" alt="Іконка доставки">
+                    <div class="advantage-text-box">
+                        <h4>Безкоштовна доставка</h4>
+                        <p>Замовлення від 150 $</p>
+                    </div>
+                </div>
+                <div class="advantage-card">
+                    <img src="./assets/icons/support.svg" alt="Іконка підтримки">
+                    <div class="advantage-text-box">
+                        <h4>Підтримка 24/7</h4>
+                        <p>Цілодобова підтримка</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram">
+            <div class="text-box">
+                <h2>Слідкуйте за нами в Instagram</h2>
+                <p class="regular-text">Приєднуйтесь до нашого інстаграм! Дивіться за кулісами створення колекцій,
+                    отримуйте стильні поради та будьте першими, хто дізнається про новинки та акції.
+                </p>
+            </div>
+            <div class="instagram-gallery">
+                <img src="./assets/images/insta-1.webp" alt="Фото з Instagram 1">
+                <img src="./assets/images/insta-2.webp" alt="Фото з Instagram 2">
+                <img src="./assets/images/insta-3.webp" alt="Фото з Instagram 3">
+                <img src="./assets/images/insta-4.webp" alt="Фото з Instagram 4">
+                <img src="./assets/images/insta-5.webp" alt="Фото з Instagram 5">
+                <img src="./assets/images/insta-6.webp" alt="Фото з Instagram 6">
+                <img src="./assets/images/insta-7.webp" alt="Фото з Instagram 7">
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <img class="subscribe-photos" src="./assets/images/subscribe-1.webp" alt="Дівчина в жовтому пальто">
+            <div class="subscribe-wrapper">
+                <div class="subscribe-card">
+                    <div class="text-box">
+                        <h2>Підпишіться на нашу розсилку</h2>
+                        <p class="regular-text">Отримуйте першими інформацію про нові колекції, ексклюзивні знижки та
+                            стильні поради. <br>
+                            Тільки корисна інформація без спаму!</p>
+                    </div>
+                    <form>
+                        <input class="company-email" type="email" placeholder="michael@ymail.com">
+                    </form>
+                </div>
+                <a class="btn btn-subscribe" href="#">Підписатися зараз</a>
+            </div>
+            <img class="subscribe-photos" src="./assets/images/subscribe-2.webp" alt="Дівчина в сірому светрі">
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="logo font-title">
+                <a href="index.html" class="title-color">FASCO</a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Центр підтримки</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Кар'єра</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Часті запитання</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="reserved-rights">Copyright © 2022 Xpro. Всі права захищені.</p>
+    </footer>
+
+    <div class="sticky-items">
+        <div class="sticky-item sticky-item-circle">
+            <a href="#" class="sticky-link" id="scrollToTop">
+                <img src="assets/icons/Vector.svg" alt="Scroll to top" class="sticky-img">
+            </a>
+        </div>
+        <div class="sticky-item sticky-item-square">
+            <a href="shop.html" class="sticky-link">
+                <img src="assets/icons/icon.svg" alt="View products" class="sticky-img">
+            </a>
+        </div>
+    </div>
+    
+    <script src="assets/scripts/scipt.js"></script>
+</body>
+</html>
