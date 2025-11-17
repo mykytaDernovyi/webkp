@@ -197,7 +197,7 @@ a {
     display: flex;
     flex-direction: column-reverse;
     gap: 15px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
@@ -254,9 +254,8 @@ form .button-group {
     text-align: center;
     font-size: 16px;
     color: var(--main-color);
-    margin-top: 25px;
+    margin: 20px 0;
     font-weight: 400;
-    margin-bottom: 20px;
 }
 
 .auth-link a {
@@ -267,13 +266,13 @@ form .button-group {
 .auth-footer {
     font-size: 14px;
     color: var(--main-color);
-    margin-top: 60px;
     text-align: center;
     width: 100%;
 }
 
-/* Desktop Styles */
-@media (min-width: 992px) {
+
+/* Laptops */
+@media (min-width: 1024px) {
     .auth-container {
         display: flex;
         flex-direction: row;

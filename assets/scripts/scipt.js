@@ -1,19 +1,7 @@
-/*
-    ======================================
-    ГОЛОВНИЙ СКРИПТ ДЛЯ САЙТУ FASCO (scipt.js)
-    ======================================
-    Містить:
-    1. Загальні скрипти (Бургер-меню, Кнопка "Вгору")
-    2. Карусель відгуків (для index.html та shop.html)
-    3. Логіка сторінки Магазину (JSON, Сортування, Пагінація, Зміна вигляду)
-    4. Логіка акордеону фільтрів (для shop.html)
-*/
-
 /* === 1. ЗАГАЛЬНІ СКРИПТИ (БУРГЕР, SCROLL-TO-TOP) === */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Бургер-меню ---
     const burgerMenu = document.getElementById('burgerMenu');
     const openIcon = document.getElementById('openIcon');
     const closeIcon = document.getElementById('closeIcon');
@@ -27,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Кнопка "Нагору" ---
     const scrollToTopBtn = document.getElementById('scrollToTop');
 
     if (scrollToTopBtn) {
@@ -70,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (newIndex === totalItems - 1) {
                 reviewCard.classList.add('prev');
             } else {
-                 reviewCard.style.display = 'none';
+                reviewCard.style.display = 'none';
             }
         });
     }
@@ -96,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- 1. ЗНАХОДИМО ЕЛЕМЕНТИ ---
     const productGrid = document.getElementById('product-grid');
     const sortSelect = document.getElementById('sort');
     const paginationContainer = document.getElementById('pagination-container');
@@ -106,14 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // --- 2. ГЛОБАЛЬНІ ЗМІННІ (СТАН СТОРІНКИ) ---
     let allProducts = [];
     let currentPage = 1;
-    
     let itemsPerPage = 9;
     let currentLayout = 'grid-3';
 
-    // --- 3. ФУНКЦІЯ ЗАВАНТАЖЕННЯ JSON ---
     async function loadProducts() {
         try {
             const response = await fetch('./assets/data/products.json');
@@ -128,11 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- 4. ГОЛОВНА ФУНКЦІЯ РЕНДЕРУ ---
     function renderPage() {
         let productsToDisplay = [...allProducts];
 
-        // 4.1. СОРТУВАННЯ
         const sortBy = sortSelect.value;
         if (sortBy === 'price-asc') {
             productsToDisplay.sort((a, b) => a.price - b.price);
@@ -140,25 +121,21 @@ document.addEventListener('DOMContentLoaded', () => {
             productsToDisplay.sort((a, b) => b.price - a.price);
         }
 
-        // 4.2. ПАГІНАЦІЯ (Тепер використовує 'itemsPerPage')
         const startIndex = (currentPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         const paginatedProducts = productsToDisplay.slice(startIndex, endIndex);
 
-        // 4.3. ВІДОБРАЖЕННЯ
         displayProducts(paginatedProducts);
         setupPagination(productsToDisplay.length);
         updateGridLayout();
     }
 
-    // --- 5. ФУНКЦІЯ ВІДОБРАЖЕННЯ ТОВАРІВ (ОНОВЛЕНО) ---
     function displayProducts(products) {
         productGrid.innerHTML = '';
         products.forEach(product => {
             const productCard = document.createElement('div');
             productCard.className = 'product-card';
 
-            // Перевірка, чи є у товару 'swatches', інакше - порожній масив
             const swatches = product.swatches || [];
             const swatchesHTML = swatches.map(color =>
                 `<span class="swatch" style="background-color: ${color};"></span>`
@@ -167,14 +144,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const oldPriceHTML = product.oldPrice
                 ? `<span class="old-price">$${product.oldPrice.toFixed(2)}</span>`
                 : '';
-                
-            // === ОНОВЛЕНО ТУТ ===
-            // 1. Зчитуємо опис з JSON
-            // 2. Якщо його немає, вставляємо порожній рядок
+
             const descriptionHTML = product.description
                 ? `<p class="description">${product.description}</p>`
                 : '';
-            // === КІНЕЦЬ ОНОВЛЕННЯ ===
 
             productCard.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
@@ -191,7 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 6. ФУНКЦІЯ СТВОРЕННЯ КНОПОК ПАГІНАЦІЇ ---
     function setupPagination(totalItems) {
         paginationContainer.innerHTML = '';
         const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -206,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             pagesToShow.push(1);
             if (currentPage > 2) pagesToShow.push('...');
-            
+
             let start = Math.max(2, currentPage - 1);
             let end = Math.min(totalPages - 1, currentPage + 1);
 
@@ -216,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let i = start; i <= end; i++) {
                 if (!pagesToShow.includes(i)) pagesToShow.push(i);
             }
-            
+
             if (currentPage < totalPages - 1) pagesToShow.push('...');
             pagesToShow.push(totalPages);
         }
@@ -258,13 +230,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- 7. ФУНКЦІЯ ОНОВЛЕННЯ ВИГЛЯДУ СІТКИ (CSS) ---
     function updateGridLayout() {
         productGrid.className = 'product-grid';
         productGrid.classList.add(`layout-${currentLayout}`);
     }
 
-    // --- 8. ОБРОБНИКИ ПОДІЙ ---
     sortSelect.addEventListener('change', () => {
         currentPage = 1;
         renderPage();
@@ -281,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         currentLayout = layout;
         itemsPerPage = Number(items);
-        currentPage = 1; 
+        currentPage = 1;
 
         viewOptions.querySelectorAll('.view-btn').forEach(btn => btn.classList.remove('active'));
         clickedButton.classList.add('active');
@@ -289,9 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderPage();
     });
 
-    // --- 9. ПЕРШИЙ ЗАПУСК ---
     loadProducts();
-
 });
 
 
