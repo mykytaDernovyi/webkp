@@ -1,0 +1,73 @@
+/* === Mobile First Styles === */
+
+.error-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; 
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.error-content {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.error-code {
+    font-family: var(--font-title); 
+    font-size: 6rem;
+    line-height: 1;
+    color: var(--title-color);
+    margin: 0;
+}
+
+.error-title {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin: 0;
+}
+
+.error-page-container .regular-text {
+    font-size: 1rem;
+    color: var(--regular-text-color);
+    margin-bottom: 10px;
+}
+
+.btn-home {
+    width: 100%;
+    max-width: 300px;
+    text-transform: uppercase;
+}
+
+/* === Tablets (min-width: 768px) === */
+@media (min-width: 768px) {
+    .error-code {
+        font-size: 10rem;
+    }
+
+    .error-title {
+        font-size: 2rem;
+    }
+    
+    .btn-home {
+        width: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+/* === Desktop (min-width: 1024px) === */
+@media (min-width: 1024px) {
+    .error-page-container {
+        min-height: 70vh;
+    }
+    
+    .error-code {
+        font-size: 12rem;
+    }
+}

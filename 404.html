@@ -1,46 +1,74 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сторінку не знайдено (404) - FASCO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
     <link rel="stylesheet" href="./assets/styles/styles.css">
-    <style>
-        .error-page-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 80vh;
-            text-align: center;
-            padding: 20px;
-        }
-        .error-page-container h1 {
-            font-family: var(--font-title);
-            font-size: 6rem;
-            color: var(--title-color);
-            margin: 0;
-        }
-        .error-page-container p {
-            font-size: 1.2rem;
-            color: var(--regular-text-color);
-            margin: 10px 0 30px;
-        }
-        .error-page-container .btn-home {
-            display: inline-block;
-            width: auto;
-            padding: 15px 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="./assets/styles/404.css">
+    
+    <link rel="icon" href="./assets/images/shop_icon.webp">
 </head>
+
 <body>
+
+    <section class="header-section">
+        <header class="header d-flex">
+            <div class="content-wrap d-flex w-full justify-between items-center">
+                <div class="logo font-title">
+                    <a href="index.html" class="title-color">FASCO</a>
+                </div>
+                <div id="burgerMenu" class="burger-menu">
+                    <i id="openIcon" class="fa-solid fa-bars"></i>
+                    <i id="closeIcon" class="fa-solid fa-xmark d-none"></i>
+                </div>
+                <nav id="headerNav" class="header-nav d-flex">
+                    <ul class="main-menu">
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="shop.html">Пропозиції</a></li>
+                        <li><a href="shop.html">Новинки</a></li>
+                        <li><a href="404.html">Пакети</a></li>
+                    </ul>
+                    <ul class="main-menu-registration">
+                        <li><a href="signin.html" class="main-login-link">Увійти</a></li>
+                        <li><a href="signup.html" class="btn btn__header">Зареєструватися</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+
     <main>
         <div class="error-page-container">
-            <h1>ТЕСТОВЕ 404</h1>
-            <p>Ой! Здається, ми не можемо знайти сторінку, яку ви шукаєте.</p>
-            <a href="index.html" class="btn btn-home">Повернутися на головну</a>
+            <div class="error-content">
+                <h1 class="error-code">404</h1>
+                <h2 class="error-title font-title">Сторінку не знайдено</h2>
+                <p class="regular-text">Ой! Здається, сторінка, яку ви шукаєте, була переміщена, видалена або ніколи не існувала.</p>
+                <a href="index.html" class="btn btn-home">Повернутися на головну</a>
+            </div>
         </div>
     </main>
 
-    </body>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="logo font-title">
+                <a href="index.html" class="title-color">FASCO</a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Центр підтримки</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Часті запитання</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="reserved-rights">Copyright © 2022 Xpro. Всі права захищені.</p>
+    </footer>
+
+    <script src="assets/scripts/scipt.js"></script>
+</body>
 </html>
