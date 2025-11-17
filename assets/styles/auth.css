@@ -270,6 +270,10 @@ form .button-group {
     width: 100%;
 }
 
+/* Tablets */
+@media (min-width: 768px) {
+    /* На планшетах залишаємо одноколонковий вигляд, він виглядає добре */
+}
 
 /* Laptops */
 @media (min-width: 1024px) {
@@ -385,4 +389,14 @@ form .button-group {
         margin: 40px 0px 0px;
         text-align: right;
     }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    /* Стилі Laptops вже підходять */
+}
+
+/* Large screens */
+@media (min-width: 1400px) {
+    /* Стилі Laptops вже підходять */
 }
