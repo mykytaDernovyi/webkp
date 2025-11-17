@@ -332,6 +332,10 @@ form .button-group {
         margin-bottom: 20px;
     }
 
+    .auth-form-block {
+        margin-top: 120px;
+    }
+
     .social-login {
         flex-direction: row;
         gap: 20px;
