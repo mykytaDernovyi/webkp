@@ -277,3 +277,40 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+/* === 5. МОДАЛЬНЕ ВІКНО === */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById("myModal");
+    const btn = document.getElementById("contactBtn"); 
+    const span = document.getElementsByClassName("close-modal")[0];
+
+    if (!modal || !btn || !span) return;
+
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    });
+
+    span.addEventListener('click', () => {
+        closeModal();
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && modal.classList.contains('open')) {
+            closeModal();
+        }
+    });
+
+    function closeModal() {
+        modal.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+});
