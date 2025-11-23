@@ -927,8 +927,13 @@ input {
 
 /* Modal Window */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
@@ -936,6 +941,7 @@ input {
         opacity: 0;
         transform: translateY(50px) scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -943,8 +949,13 @@ input {
 }
 
 @keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes slideDown {
@@ -952,6 +963,7 @@ input {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
+
     to {
         opacity: 0;
         transform: translateY(50px) scale(0.95);
@@ -992,7 +1004,7 @@ input {
     position: relative;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     text-align: center;
-    opacity: 0; 
+    opacity: 0;
     transform: translateY(50px);
 }
 
