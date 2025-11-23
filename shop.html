@@ -285,7 +285,7 @@
             </div>
             <nav class="footer-nav">
                 <ul>
-                    <li><a href="#">Центр підтримки</a></li>
+                    <li><a href="#" id="supportBtn">Центр підтримки</a></li>
                     <li><a href="#">Оплата</a></li>
                     <li><a href="#">Контакти</a></li>
                     <li><a href="#">Кар'єра</a></li>
@@ -296,7 +296,20 @@
         </div>
         <p class="reserved-rights">Copyright © 2022 Xpro. Всі права захищені.</p>
     </footer>
-
+    <div id="myModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="font-title">Напишіть нам</h2>
+            <p class="regular-text">Маєте запитання? Заповніть форму, і ми зв'яжемося з вами!</p>
+            
+            <form class="modal-form">
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="email" placeholder="Ваш Email" required>
+                <textarea placeholder="Ваше повідомлення" rows="4" required></textarea>
+                <button type="submit" class="btn btn-modal">Надіслати</button>
+            </form>
+        </div>
+    </div>
     <div class="sticky-items">
         <div class="sticky-item sticky-item-circle">
             <a href="#" class="sticky-link" id="scrollToTop">
