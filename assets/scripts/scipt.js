@@ -282,7 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById("myModal");
-    const btn = document.getElementById("contactBtn"); 
+    const btn = document.getElementById("supportBtn"); 
     const span = document.getElementsByClassName("close-modal")[0];
 
     if (!modal || !btn || !span) return;
@@ -311,6 +311,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function closeModal() {
         modal.classList.remove('open');
+        modal.classList.add('close');
+        setTimeout(() => {
+            modal.classList.remove('close');
+        }, 400);
         document.body.style.overflow = '';
     }
 });

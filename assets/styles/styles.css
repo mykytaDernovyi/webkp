@@ -911,6 +911,11 @@ input {
     font-size: 16px;
     line-height: 100%;
     color: var(--title-color);
+    transition: color 0.3s;
+}
+
+.footer-nav ul li :hover {
+    color: var(--btn-color);
 }
 
 .reserved-rights {
@@ -937,6 +942,22 @@ input {
     }
 }
 
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(50px) scale(0.95);
+    }
+}
+
 .modal-overlay {
     display: none;
     position: fixed;
@@ -957,6 +978,11 @@ input {
     animation: fadeIn 0.3s ease-out forwards;
 }
 
+.modal-overlay.close {
+    display: flex;
+    animation: fadeOut 0.3s ease-out forwards;
+}
+
 .modal-content {
     background-color: var(--main-background);
     padding: 40px;
@@ -972,6 +998,10 @@ input {
 
 .modal-overlay.open .modal-content {
     animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.modal-overlay.close .modal-content {
+    animation: slideDown 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .close-modal {
