@@ -1,4 +1,4 @@
-/* === Mobile First Styles === */
+/* Mobile First Styles */
 
 .error-page-container {
     display: flex;
@@ -44,7 +44,7 @@
     text-transform: uppercase;
 }
 
-/* === Tablets (min-width: 768px) === */
+/* Tablets */
 @media (min-width: 768px) {
     .error-code {
         font-size: 10rem;
@@ -61,7 +61,7 @@
     }
 }
 
-/* === Desktop (min-width: 1024px) === */
+/* Desktop */
 @media (min-width: 1024px) {
     .error-page-container {
         min-height: 70vh;
